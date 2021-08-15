@@ -1,0 +1,15 @@
+{
+    "name": "Prevent FaceBooc Scrolling",
+    "description": "if you are cant stop yoursefl in scrolling on facebook this tool will prevent You",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://*.facebook.com/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html"
+    }
+  }
